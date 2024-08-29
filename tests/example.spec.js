@@ -14,6 +14,5 @@ test("example test", async ({ page }) => {
 
   await expect(page.getByText("Form title")).toBeVisible();
   await page.getByRole("button", { name: "Submit" }).click();
-  await page.getByRole("button", { name: "Ok" }).click();
   await page.getByText("Lawton, Oklahoma, United States").click();
 });
